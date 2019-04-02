@@ -4,12 +4,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MyFirstAppComponent } from './my-first-app/my-first-app.component';
+import { MyFirstAppComponent } from './user_profile/my-first-app.component';
+import { MoviesListComponent } from './movies-list/movies-list.component';
+import { HighlightDirective } from './highlight.directive';
+import { DisplayMoviesDirective } from './display-movies.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyFirstAppComponent
+    MyFirstAppComponent,
+    MoviesListComponent,
+    HighlightDirective,
+    DisplayMoviesDirective
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+
+<ng-template [appDisplayMovies] = "displayMovieList">
+  
+  <p appHighlight>Raging Bull 1980</p>
+  
+  <p *ngFor = "let movie of movies">
+    {{ movie.name }} {{ movie.date }}
+  </p>
+
+</ng-template>
+
