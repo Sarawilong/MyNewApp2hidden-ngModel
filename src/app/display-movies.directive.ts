@@ -7,9 +7,10 @@ export class DisplayMoviesDirective {
 
   @Input() set appDisplayMovies(condition:boolean){
     if(condition){
-      this.vwref.createEmbeddedView(this.tplRef);
+      this.vwref.clear();
+      
     } else{
-      this.vwref.clear()
+      this.vwref.createEmbeddedView(this.tplRef);
     }
   }
 
